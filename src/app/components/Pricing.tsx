@@ -29,9 +29,9 @@ const translations = {
       },
       {
         name: 'Skříňka M',
-        hourlyPrice: '38',
-        hourlyPriceEur: '1,5',
-        dailyPrice: '189',
+        hourlyPrice: '49',
+        hourlyPriceEur: '2,0',
+        dailyPrice: '199',
         dailyPriceEur: '7,6',
         description: 'Pro standardní kufry a zavazadla',
         features: [
@@ -45,9 +45,9 @@ const translations = {
       },
       {
         name: 'Skříňka L',
-        hourlyPrice: '44',
-        hourlyPriceEur: '1,8',
-        dailyPrice: '219',
+        hourlyPrice: '59',
+        hourlyPriceEur: '2,4',
+        dailyPrice: '239',
         dailyPriceEur: '8,8',
         description: 'Pro velké kufry a více zavazadel',
         features: [
@@ -102,9 +102,9 @@ const translations = {
       },
       {
         name: 'Locker M',
-        hourlyPrice: '38',
-        hourlyPriceEur: '1.5',
-        dailyPrice: '189',
+        hourlyPrice: '49',
+        hourlyPriceEur: '2.0',
+        dailyPrice: '199',
         dailyPriceEur: '7.6',
         description: 'For standard suitcases and luggage',
         features: [
@@ -118,9 +118,9 @@ const translations = {
       },
       {
         name: 'Locker L',
-        hourlyPrice: '44',
-        hourlyPriceEur: '1.8',
-        dailyPrice: '219',
+        hourlyPrice: '59',
+        hourlyPriceEur: '2.4',
+        dailyPrice: '239',
         dailyPriceEur: '8.8',
         description: 'For large suitcases and multiple bags',
         features: [
@@ -175,9 +175,9 @@ const translations = {
       },
       {
         name: 'Schließfach M',
-        hourlyPrice: '38',
-        hourlyPriceEur: '1,5',
-        dailyPrice: '189',
+        hourlyPrice: '49',
+        hourlyPriceEur: '2,0',
+        dailyPrice: '199',
         dailyPriceEur: '7,6',
         description: 'Für Standard-Koffer und Gepäck',
         features: [
@@ -191,9 +191,9 @@ const translations = {
       },
       {
         name: 'Schließfach L',
-        hourlyPrice: '44',
-        hourlyPriceEur: '1,8',
-        dailyPrice: '219',
+        hourlyPrice: '59',
+        hourlyPriceEur: '2,4',
+        dailyPrice: '239',
         dailyPriceEur: '8,8',
         description: 'Für große Koffer und mehrere Taschen',
         features: [
@@ -248,9 +248,9 @@ const translations = {
       },
       {
         name: 'Schowek M',
-        hourlyPrice: '38',
-        hourlyPriceEur: '1,5',
-        dailyPrice: '189',
+        hourlyPrice: '49',
+        hourlyPriceEur: '2,0',
+        dailyPrice: '199',
         dailyPriceEur: '7,6',
         description: 'Dla standardowych walizek i bagażu',
         features: [
@@ -264,9 +264,9 @@ const translations = {
       },
       {
         name: 'Schowek L',
-        hourlyPrice: '44',
-        hourlyPriceEur: '1,8',
-        dailyPrice: '219',
+        hourlyPrice: '59',
+        hourlyPriceEur: '2,4',
+        dailyPrice: '239',
         dailyPriceEur: '8,8',
         description: 'Dla dużych walizek i wielu toreb',
         features: [
@@ -321,9 +321,9 @@ const translations = {
       },
       {
         name: 'Камера M',
-        hourlyPrice: '38',
-        hourlyPriceEur: '1,5',
-        dailyPrice: '189',
+        hourlyPrice: '49',
+        hourlyPriceEur: '2,0',
+        dailyPrice: '199',
         dailyPriceEur: '7,6',
         description: 'Для звичайних валіз і багажу',
         features: [
@@ -337,9 +337,9 @@ const translations = {
       },
       {
         name: 'Камера L',
-        hourlyPrice: '44',
-        hourlyPriceEur: '1,8',
-        dailyPrice: '219',
+        hourlyPrice: '59',
+        hourlyPriceEur: '2,4',
+        dailyPrice: '239',
         dailyPriceEur: '8,8',
         description: 'Для великих валіз і багатьох сумок',
         features: [
@@ -394,9 +394,9 @@ const translations = {
       },
       {
         name: 'Casier M',
-        hourlyPrice: '38',
-        hourlyPriceEur: '1,5',
-        dailyPrice: '189',
+        hourlyPrice: '49',
+        hourlyPriceEur: '2,0',
+        dailyPrice: '199',
         dailyPriceEur: '7,6',
         description: 'Pour valises et bagages standards',
         features: [
@@ -410,9 +410,9 @@ const translations = {
       },
       {
         name: 'Casier L',
-        hourlyPrice: '44',
-        hourlyPriceEur: '1,8',
-        dailyPrice: '219',
+        hourlyPrice: '59',
+        hourlyPriceEur: '2,4',
+        dailyPrice: '239',
         dailyPriceEur: '8,8',
         description: 'Pour grandes valises et sacs multiples',
         features: [
@@ -467,9 +467,9 @@ const translations = {
       },
       {
         name: 'Taquilla M',
-        hourlyPrice: '38',
-        hourlyPriceEur: '1,5',
-        dailyPrice: '189',
+        hourlyPrice: '49',
+        hourlyPriceEur: '2,0',
+        dailyPrice: '199',
         dailyPriceEur: '7,6',
         description: 'Para maletas y equipaje estándar',
         features: [
@@ -483,9 +483,9 @@ const translations = {
       },
       {
         name: 'Taquilla L',
-        hourlyPrice: '44',
-        hourlyPriceEur: '1,8',
-        dailyPrice: '219',
+        hourlyPrice: '59',
+        hourlyPriceEur: '2,4',
+        dailyPrice: '239',
         dailyPriceEur: '8,8',
         description: 'Para maletas grandes y múltiples bolsas',
         features: [
@@ -540,9 +540,9 @@ const translations = {
       },
       {
         name: 'Armadietto M',
-        hourlyPrice: '38',
-        hourlyPriceEur: '1,5',
-        dailyPrice: '189',
+        hourlyPrice: '49',
+        hourlyPriceEur: '2,0',
+        dailyPrice: '199',
         dailyPriceEur: '7,6',
         description: 'Per valigie e bagagli standard',
         features: [
@@ -556,9 +556,9 @@ const translations = {
       },
       {
         name: 'Armadietto L',
-        hourlyPrice: '44',
-        hourlyPriceEur: '1,8',
-        dailyPrice: '219',
+        hourlyPrice: '59',
+        hourlyPriceEur: '2,4',
+        dailyPrice: '239',
         dailyPriceEur: '8,8',
         description: 'Per valigie grandi e più borse',
         features: [

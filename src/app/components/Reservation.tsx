@@ -576,9 +576,9 @@ const translations = {
 };
 
 const PRICING = {
-  S: { hourly: 29, daily: 119, hourlyEur: 1.2, dailyEur: 4.8 },
-  M: { hourly: 38, daily: 189, hourlyEur: 1.5, dailyEur: 7.6 },
-  L: { hourly: 44, daily: 219, hourlyEur: 1.8, dailyEur: 8.8 },
+  S: { hourly: 29, daily: 119, hourlyEur: 1.2, dailyEur: 4.9 },
+  M: { hourly: 49, daily: 199, hourlyEur: 2.0, dailyEur: 7.9 },
+  L: { hourly: 59, daily: 239, hourlyEur: 2.4, dailyEur: 9.5 },
 };
 
 export function Reservation({ language, availability }: ReservationProps) {
@@ -711,13 +711,14 @@ export function Reservation({ language, availability }: ReservationProps) {
     const count = formData.lockerCount;
 
     if (currency === 'CZK') {
-      const mixedPrice = days * pricing.daily + hours * pricing.hourly;
-      const fullDaysPrice = (days + (hours > 0 ? 1 : 0)) * pricing.daily;
-      return Math.min(mixedPrice, fullDaysPrice) * count;
+      // Each full day = daily rate, remaining hours capped at daily rate (4h max)
+      const hoursCost = Math.min(hours * pricing.hourly, pricing.daily);
+      const totalPrice = days * pricing.daily + (hours > 0 ? hoursCost : 0);
+      return totalPrice * count;
     } else {
-      const mixedPrice = days * pricing.dailyEur + hours * pricing.hourlyEur;
-      const fullDaysPrice = (days + (hours > 0 ? 1 : 0)) * pricing.dailyEur;
-      return Number((Math.min(mixedPrice, fullDaysPrice) * count).toFixed(2));
+      const hoursCost = Math.min(hours * pricing.hourlyEur, pricing.dailyEur);
+      const totalPrice = days * pricing.dailyEur + (hours > 0 ? hoursCost : 0);
+      return Number((totalPrice * count).toFixed(2));
     }
   };
 
