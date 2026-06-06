@@ -370,6 +370,7 @@ app.post("/make-server-91daaa27/stripe-webhook", async (c) => {
                     <h3 style=\"margin-top: 0; color: #1f2937;\">Order Details</h3>
                     <p><strong>Order ID:</strong> #${order.orderId}</p>
                     <p><strong>Locker Size:</strong> ${order.lockerSize}</p>
+                    <p><strong>Number of Lockers:</strong> ${order.lockerCount || 1}</p>
                     ${order.promoCode ? `<p><strong>Promo Code:</strong> ${order.promoCode}</p>` : ''}
                     ${order.promoCode ? `<p><strong>Original Price:</strong> ${order.originalPrice} CZK</p>` : ''}
                     ${order.promoCode ? `<p><strong>Discount:</strong> ${order.promoDiscount}%</p>` : ''}
@@ -616,6 +617,7 @@ app.post("/make-server-91daaa27/create-free-booking", async (c) => {
                   <h3 style="margin-top: 0; color: #1f2937;">Order Details</h3>
                   <p><strong>Order ID:</strong> #${orderId}</p>
                   <p><strong>Locker Size:</strong> ${lockerSize}</p>
+                  <p><strong>Number of Lockers:</strong> ${lockerCount || 1}</p>
                   <p><strong>Promo Code:</strong> ${promoCode}</p>
                   <p><strong>Original Price:</strong> ${originalPrice} CZK</p>
                   <p><strong>Total Price:</strong> 0 CZK (FREE)</p>
@@ -877,6 +879,7 @@ app.post("/make-server-91daaa27/verify-payment", async (c) => {
                       <h3 style=\"margin-top: 0; color: #1f2937;\">Order Details</h3>
                       <p><strong>Order ID:</strong> #${order.orderId}</p>
                       <p><strong>Locker Size:</strong> ${order.lockerSize}</p>
+                      <p><strong>Number of Lockers:</strong> ${order.lockerCount || 1}</p>
                       ${order.promoCode ? `<p><strong>Promo Code:</strong> ${order.promoCode}</p>` : ''}
                       ${order.promoCode ? `<p><strong>Original Price:</strong> ${order.originalPrice}</p>` : ''}
                       ${order.promoCode ? `<p><strong>Discount:</strong> ${order.promoDiscount}</p>` : ''}
