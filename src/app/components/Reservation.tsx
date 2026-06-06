@@ -600,6 +600,7 @@ export function Reservation({ language, availability }: ReservationProps) {
   const [customerData, setCustomerData] = useState({
     name: '',
     email: '',
+    confirmEmail: '',
     phonePrefix: '+420',
     phone: '',
   });
@@ -777,6 +778,11 @@ export function Reservation({ language, availability }: ReservationProps) {
 
     if (!customerData.name || !customerData.email || !customerData.phone) {
       alert(t.emailRequired);
+      return;
+    }
+
+    if (customerData.email !== customerData.confirmEmail) {
+      alert('Emails do not match. Please check and try again.');
       return;
     }
 
@@ -1300,6 +1306,33 @@ export function Reservation({ language, availability }: ReservationProps) {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <Mail className="w-4 h-4 inline mr-2" />
+                    Confirm Email <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    value={customerData.confirmEmail}
+                    onChange={(e) => setCustomerData({ ...customerData, confirmEmail: e.target.value })}
+                    className={`w-full px-4 py-3 border-2 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none ${
+                      customerData.confirmEmail
+                        ? customerData.email === customerData.confirmEmail
+                          ? 'border-green-400 bg-green-50'
+                          : 'border-red-400 bg-red-50'
+                        : 'border-gray-300'
+                    }`}
+                    placeholder="Retype your email"
+                    required
+                  />
+                  {customerData.confirmEmail && customerData.email !== customerData.confirmEmail && (
+                    <p className="mt-1 text-sm text-red-600 font-medium">⚠️ Emails do not match</p>
+                  )}
+                  {customerData.confirmEmail && customerData.email === customerData.confirmEmail && (
+                    <p className="mt-1 text-sm text-green-600 font-medium">✅ Emails match</p>
+                  )}
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     <Phone className="w-4 h-4 inline mr-2" />
                     {t.phone} <span className="text-red-500">*</span>
                   </label>
@@ -1400,7 +1433,7 @@ export function Reservation({ language, availability }: ReservationProps) {
                 </button>
                 <button
                   onClick={handleSubmit}
-                  disabled={isProcessing || !customerData.name || !customerData.email || !customerData.phone}
+                  disabled={isProcessing || !customerData.name || !customerData.email || !customerData.phone || customerData.email !== customerData.confirmEmail}
                   className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 disabled:from-gray-300 disabled:to-gray-400 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-3 transition-all shadow-lg hover:shadow-xl disabled:cursor-not-allowed"
                 >
                   {isProcessing ? (
