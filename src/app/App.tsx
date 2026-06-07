@@ -249,6 +249,18 @@ export default function App() {
   return (
     <div className="size-full">
       <Navigation language={language} setLanguage={setLanguage} availability={availability} />
+
+      {/* Sticky Book Now button - mobile only */}
+      <a
+        href="#reservation"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById('reservation')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+        className="fixed bottom-4 left-4 right-4 z-50 md:hidden bg-blue-600 hover:bg-blue-700 text-white text-center font-bold text-lg py-4 rounded-2xl shadow-2xl transition-all"
+      >
+        📦 Book Now →
+      </a>
       <Hero language={language} availability={availability} />
       <PaymentBanner language={language} />
       <Features language={language} />

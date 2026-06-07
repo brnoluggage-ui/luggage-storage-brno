@@ -147,8 +147,18 @@ export function Navigation({ language, setLanguage, availability }: NavigationPr
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const now = new Date();
+  const brnoHour = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Prague' })).getHours();
+  const brnoMin = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Prague' })).getMinutes();
+  const isOpen = (brnoHour > 7 || (brnoHour === 7 && brnoMin >= 30)) && brnoHour < 18;
+
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <>
+      {/* Opening hours banner */}
+      <div className={`fixed top-0 left-0 right-0 z-50 text-center text-sm font-semibold py-1.5 ${isOpen ? 'bg-green-500 text-white' : 'bg-orange-500 text-white'}`}>
+        {isOpen ? '✅ Open now · 7:30–18:00' : '⏰ Closed now · Opens at 7:30'} &nbsp;·&nbsp; Directly inside Brno Main Train Station
+      </div>
+    <nav className="fixed top-6 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <button
@@ -303,5 +313,6 @@ export function Navigation({ language, setLanguage, availability }: NavigationPr
         </div>
       )}
     </nav>
+    </>
   );
 }

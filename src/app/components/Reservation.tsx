@@ -711,12 +711,12 @@ export function Reservation({ language, availability }: ReservationProps) {
     const count = formData.lockerCount;
 
     if (currency === 'CZK') {
-      // Each full day = daily rate, remaining hours capped at daily rate (4h max)
-      const hoursCost = Math.min(hours * pricing.hourly, pricing.daily);
+      // 4+ remaining hours = daily rate, under 4h = hourly rate
+      const hoursCost = hours >= 4 ? pricing.daily : hours * pricing.hourly;
       const totalPrice = days * pricing.daily + (hours > 0 ? hoursCost : 0);
       return totalPrice * count;
     } else {
-      const hoursCost = Math.min(hours * pricing.hourlyEur, pricing.dailyEur);
+      const hoursCost = hours >= 4 ? pricing.dailyEur : hours * pricing.hourlyEur;
       const totalPrice = days * pricing.dailyEur + (hours > 0 ? hoursCost : 0);
       return Number((totalPrice * count).toFixed(2));
     }
@@ -953,6 +953,28 @@ export function Reservation({ language, availability }: ReservationProps) {
             <span className={currentStep >= 3 ? 'text-blue-600' : 'text-gray-500'}>{t.reviewAndPay}</span>
           </div>
         </div>
+
+        {/* Progress Summary Bar - shown from step 2 onwards */}
+        {currentStep > 1 && (
+          <div className="mb-6 bg-blue-600 text-white rounded-xl px-6 py-4 flex flex-wrap items-center justify-between gap-3 shadow-lg">
+            <div className="flex items-center gap-4 flex-wrap">
+              <div className="flex items-center gap-2">
+                <span className="text-blue-200 text-sm">Locker:</span>
+                <span className="font-bold">{formData.lockerCount}× {formData.lockerSize === 'S' ? 'Small' : formData.lockerSize === 'M' ? 'Medium' : 'Large'}</span>
+              </div>
+              {formData.dropOffDate && formData.pickUpDate && (
+                <div className="flex items-center gap-2">
+                  <span className="text-blue-200 text-sm">Duration:</span>
+                  <span className="font-bold">{calculateDuration().days}d {calculateDuration().hours}h</span>
+                </div>
+              )}
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-blue-200 text-sm">Total:</span>
+              <span className="font-bold text-xl">{calculatePrice()} {currency === 'CZK' ? 'Kč' : '€'}</span>
+            </div>
+          </div>
+        )}
 
         {/* Main Card */}
         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
