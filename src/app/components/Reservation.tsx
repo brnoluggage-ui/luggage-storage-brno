@@ -25,9 +25,9 @@ const translations = {
     lockerS: 'Malá (S)',
     lockerM: 'Střední (M)',
     lockerL: 'Velká (L)',
-    lockerSDim: '30 × 20 × 50 cm',
-    lockerMDim: '50 × 60 × 60 cm',
-    lockerLDim: '50 × 60 × 85 cm',
+    lockerSDim: '17 × 20 × 50 cm',
+    lockerMDim: '60 × 50 × 60 cm',
+    lockerLDim: '60 × 50 × 80 cm',
     unavailable: 'Nedostupné',
     dropOff: 'Uložení zavazadel',
     pickUp: 'Vyzvednutí zavazadel',
@@ -95,9 +95,9 @@ const translations = {
     lockerS: 'Small (S)',
     lockerM: 'Medium (M)',
     lockerL: 'Large (L)',
-    lockerSDim: '12 × 8 × 20 in',
-    lockerMDim: '20 × 24 × 24 in',
-    lockerLDim: '20 × 24 × 33 in',
+    lockerSDim: '17 × 20 × 50 cm',
+    lockerMDim: '60 × 50 × 60 cm',
+    lockerLDim: '60 × 50 × 80 cm',
     unavailable: 'Unavailable',
     dropOff: 'Drop-off',
     pickUp: 'Pick-up',
@@ -165,9 +165,9 @@ const translations = {
     lockerS: 'Klein (S)',
     lockerM: 'Mittel (M)',
     lockerL: 'Groß (L)',
-    lockerSDim: '30 × 20 × 50 cm',
-    lockerMDim: '50 × 60 × 60 cm',
-    lockerLDim: '50 × 60 × 85 cm',
+    lockerSDim: '17 × 20 × 50 cm',
+    lockerMDim: '60 × 50 × 60 cm',
+    lockerLDim: '60 × 50 × 80 cm',
     unavailable: 'Nicht verfügbar',
     dropOff: 'Abgabe',
     pickUp: 'Abholung',
@@ -235,9 +235,9 @@ const translations = {
     lockerS: 'Mała (S)',
     lockerM: 'Średnia (M)',
     lockerL: 'Duża (L)',
-    lockerSDim: '30 × 20 × 50 cm',
-    lockerMDim: '50 × 60 × 60 cm',
-    lockerLDim: '50 × 60 × 85 cm',
+    lockerSDim: '17 × 20 × 50 cm',
+    lockerMDim: '60 × 50 × 60 cm',
+    lockerLDim: '60 × 50 × 80 cm',
     unavailable: 'Niedostępne',
     dropOff: 'Oddanie',
     pickUp: 'Odbiór',
@@ -305,7 +305,7 @@ const translations = {
     lockerS: 'Мала (S)',
     lockerM: 'Середня (M)',
     lockerL: 'Велика (L)',
-    lockerSDim: '30 × 20 × 50 см',
+    lockerSDim: '17 × 20 × 50 см',
     lockerMDim: '50 × 60 × 60 см',
     lockerLDim: '50 × 60 × 85 см',
     unavailable: 'Недоступно',
@@ -375,9 +375,9 @@ const translations = {
     lockerS: 'Petit (S)',
     lockerM: 'Moyen (M)',
     lockerL: 'Grand (L)',
-    lockerSDim: '30 × 20 × 50 cm',
-    lockerMDim: '50 × 60 × 60 cm',
-    lockerLDim: '50 × 60 × 85 cm',
+    lockerSDim: '17 × 20 × 50 cm',
+    lockerMDim: '60 × 50 × 60 cm',
+    lockerLDim: '60 × 50 × 80 cm',
     unavailable: 'Indisponible',
     dropOff: 'Dépôt',
     pickUp: 'Retrait',
@@ -445,9 +445,9 @@ const translations = {
     lockerS: 'Pequeño (S)',
     lockerM: 'Mediano (M)',
     lockerL: 'Grande (L)',
-    lockerSDim: '30 × 20 × 50 cm',
-    lockerMDim: '50 × 60 × 60 cm',
-    lockerLDim: '50 × 60 × 85 cm',
+    lockerSDim: '17 × 20 × 50 cm',
+    lockerMDim: '60 × 50 × 60 cm',
+    lockerLDim: '60 × 50 × 80 cm',
     unavailable: 'No disponible',
     dropOff: 'Entrega',
     pickUp: 'Recogida',
@@ -515,9 +515,9 @@ const translations = {
     lockerS: 'Piccolo (S)',
     lockerM: 'Medio (M)',
     lockerL: 'Grande (L)',
-    lockerSDim: '30 × 20 × 50 cm',
-    lockerMDim: '50 × 60 × 60 cm',
-    lockerLDim: '50 × 60 × 85 cm',
+    lockerSDim: '17 × 20 × 50 cm',
+    lockerMDim: '60 × 50 × 60 cm',
+    lockerLDim: '60 × 50 × 80 cm',
     unavailable: 'Non disponibile',
     dropOff: 'Consegna',
     pickUp: 'Ritiro',
@@ -1043,11 +1043,16 @@ export function Reservation({ language, availability }: ReservationProps) {
                         </div>
                       )}
                       
-                      <div className="text-2xl font-bold text-gray-900 mb-2">
+                      <div className="text-2xl font-bold text-gray-900 mb-1">
                         {t[`locker${size}` as keyof typeof t]}
                       </div>
-                      <div className="text-sm text-gray-600 mb-4">
+                      <div className="text-xs text-gray-400 mb-2">
                         {t[`locker${size}Dim` as keyof typeof t]}
+                      </div>
+                      <div className="text-sm text-gray-700 mb-3 text-left leading-relaxed">
+                        {size === 'S' && <span>👜 Handbag · 📱 Phone · 🛂 Passport · 🕶️ Small items</span>}
+                        {size === 'M' && <span>🧳🧳 2 cabin bags<br/>🎒 + backpack</span>}
+                        {size === 'L' && <span>🧳🧳🧳 3 cabin bags<br/>🎒 + backpack</span>}
                       </div>
                       
                       {!isUnavailable && (
