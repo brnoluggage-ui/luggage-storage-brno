@@ -82,6 +82,21 @@ const translations = {
     originalPrice: 'Original Price',
     discount: 'Discount',
     youSave: 'You Save',
+    lockerSDesc: '👜 Taška · 📱 Telefon · 🛂 Pas · 🕶️ Malé věci',
+    lockerMDesc: '🧳🧳 2 kabinové kufry\n🎒 + batoh',
+    lockerLDesc: '🧳🧳🧳 3 kabinové kufry\n🎒 + batoh',
+    available: '✓ Dostupné',
+    lockerLabel: 'Skříňka',
+    durationLabel: 'Délka',
+    totalLabel: 'Celkem',
+    lockersCount: 'skříněk',
+    confirmEmailLabel: 'Potvrdit e-mail',
+    confirmEmailPlaceholder: 'Zadejte e-mail znovu',
+    emailsDoNotMatch: '⚠️ E-maily se neshodují',
+    emailsMatch: '✅ E-maily se shodují',
+    sizeSmall: 'Malá',
+    sizeMedium: 'Střední',
+    sizeLarge: 'Velká',
   },
   en: {
     title: 'Reservation',
@@ -152,6 +167,21 @@ const translations = {
     originalPrice: 'Original Price',
     discount: 'Discount',
     youSave: 'You Save',
+    lockerSDesc: '👜 Handbag · 📱 Phone · 🛂 Passport · 🕶️ Small items',
+    lockerMDesc: '🧳🧳 2 cabin bags\n🎒 + backpack',
+    lockerLDesc: '🧳🧳🧳 3 cabin bags\n🎒 + backpack',
+    available: '✓ Available',
+    lockerLabel: 'Locker',
+    durationLabel: 'Duration',
+    totalLabel: 'Total',
+    lockersCount: 'lockers',
+    confirmEmailLabel: 'Confirm Email',
+    confirmEmailPlaceholder: 'Retype your email',
+    emailsDoNotMatch: '⚠️ Emails do not match',
+    emailsMatch: '✅ Emails match',
+    sizeSmall: 'Small',
+    sizeMedium: 'Medium',
+    sizeLarge: 'Large',
   },
   de: {
     title: 'Reservierung',
@@ -222,6 +252,21 @@ const translations = {
     originalPrice: 'Originalpreis',
     discount: 'Rabatt',
     youSave: 'Sie sparen',
+    lockerSDesc: '👜 Handtasche · 📱 Handy · 🛂 Reisepass · 🕶️ Kleingegenstände',
+    lockerMDesc: '🧳🧳 2 Kabinenkoffer\n🎒 + Rucksack',
+    lockerLDesc: '🧳🧳🧳 3 Kabinenkoffer\n🎒 + Rucksack',
+    available: '✓ Verfügbar',
+    lockerLabel: 'Schließfach',
+    durationLabel: 'Dauer',
+    totalLabel: 'Gesamt',
+    lockersCount: 'Schließfächer',
+    confirmEmailLabel: 'E-Mail bestätigen',
+    confirmEmailPlaceholder: 'E-Mail wiederholen',
+    emailsDoNotMatch: '⚠️ E-Mails stimmen nicht überein',
+    emailsMatch: '✅ E-Mails stimmen überein',
+    sizeSmall: 'Klein',
+    sizeMedium: 'Mittel',
+    sizeLarge: 'Groß',
   },
   pl: {
     title: 'Rezerwacja',
@@ -292,6 +337,21 @@ const translations = {
     originalPrice: 'Cena oryginalna',
     discount: 'Rabat',
     youSave: 'Oszczędzasz',
+    lockerSDesc: '👜 Torebka · 📱 Telefon · 🛂 Paszport · 🕶️ Małe rzeczy',
+    lockerMDesc: '🧳🧳 2 bagaże podręczne\n🎒 + plecak',
+    lockerLDesc: '🧳🧳🧳 3 bagaże podręczne\n🎒 + plecak',
+    available: '✓ Dostępne',
+    lockerLabel: 'Szafka',
+    durationLabel: 'Czas',
+    totalLabel: 'Razem',
+    lockersCount: 'szafek',
+    confirmEmailLabel: 'Potwierdź e-mail',
+    confirmEmailPlaceholder: 'Wpisz ponownie e-mail',
+    emailsDoNotMatch: '⚠️ E-maile nie są zgodne',
+    emailsMatch: '✅ E-maile są zgodne',
+    sizeSmall: 'Mała',
+    sizeMedium: 'Średnia',
+    sizeLarge: 'Duża',
   },
   uk: {
     title: 'Резервація',
@@ -362,6 +422,21 @@ const translations = {
     originalPrice: 'Початкова ціна',
     discount: 'Знижка',
     youSave: 'Ви економите',
+    lockerSDesc: '👜 Сумка · 📱 Телефон · 🛂 Паспорт · 🕶️ Малі речі',
+    lockerMDesc: '🧳🧳 2 ручні валізи\n🎒 + рюкзак',
+    lockerLDesc: '🧳🧳🧳 3 ручні валізи\n🎒 + рюкзак',
+    available: '✓ Доступно',
+    lockerLabel: 'Камера',
+    durationLabel: 'Тривалість',
+    totalLabel: 'Разом',
+    lockersCount: 'камер',
+    confirmEmailLabel: 'Підтвердіть email',
+    confirmEmailPlaceholder: 'Повторіть email',
+    emailsDoNotMatch: '⚠️ Email-адреси не збігаються',
+    emailsMatch: '✅ Email-адреси збігаються',
+    sizeSmall: 'Мала',
+    sizeMedium: 'Середня',
+    sizeLarge: 'Велика',
   },
   fr: {
     title: 'Réservation',
@@ -432,6 +507,21 @@ const translations = {
     originalPrice: 'Prix original',
     discount: 'Réduction',
     youSave: 'Vous économisez',
+    lockerSDesc: '👜 Sac à main · 📱 Téléphone · 🛂 Passeport · 🕶️ Petits objets',
+    lockerMDesc: '🧳🧳 2 bagages cabine\n🎒 + sac à dos',
+    lockerLDesc: '🧳🧳🧳 3 bagages cabine\n🎒 + sac à dos',
+    available: '✓ Disponible',
+    lockerLabel: 'Casier',
+    durationLabel: 'Durée',
+    totalLabel: 'Total',
+    lockersCount: 'casiers',
+    confirmEmailLabel: 'Confirmer l\'e-mail',
+    confirmEmailPlaceholder: 'Répétez votre e-mail',
+    emailsDoNotMatch: '⚠️ Les e-mails ne correspondent pas',
+    emailsMatch: '✅ Les e-mails correspondent',
+    sizeSmall: 'Petit',
+    sizeMedium: 'Moyen',
+    sizeLarge: 'Grand',
   },
   es: {
     title: 'Reserva',
@@ -502,6 +592,21 @@ const translations = {
     originalPrice: 'Precio original',
     discount: 'Descuento',
     youSave: 'Usted ahorra',
+    lockerSDesc: '👜 Bolso · 📱 Teléfono · 🛂 Pasaporte · 🕶️ Objetos pequeños',
+    lockerMDesc: '🧳🧳 2 maletas de cabina\n🎒 + mochila',
+    lockerLDesc: '🧳🧳🧳 3 maletas de cabina\n🎒 + mochila',
+    available: '✓ Disponible',
+    lockerLabel: 'Taquilla',
+    durationLabel: 'Duración',
+    totalLabel: 'Total',
+    lockersCount: 'taquillas',
+    confirmEmailLabel: 'Confirmar correo',
+    confirmEmailPlaceholder: 'Repite tu correo',
+    emailsDoNotMatch: '⚠️ Los correos no coinciden',
+    emailsMatch: '✅ Los correos coinciden',
+    sizeSmall: 'Pequeño',
+    sizeMedium: 'Mediano',
+    sizeLarge: 'Grande',
   },
   it: {
     title: 'Prenotazione',
@@ -572,6 +677,21 @@ const translations = {
     originalPrice: 'Prezzo originale',
     discount: 'Sconto',
     youSave: 'Risparmi',
+    lockerSDesc: '👜 Borsa · 📱 Telefono · 🛂 Passaporto · 🕶️ Oggetti piccoli',
+    lockerMDesc: '🧳🧳 2 trolley cabina\n🎒 + zaino',
+    lockerLDesc: '🧳🧳🧳 3 trolley cabina\n🎒 + zaino',
+    available: '✓ Disponibile',
+    lockerLabel: 'Armadietto',
+    durationLabel: 'Durata',
+    totalLabel: 'Totale',
+    lockersCount: 'armadietti',
+    confirmEmailLabel: 'Conferma e-mail',
+    confirmEmailPlaceholder: 'Ripeti la tua e-mail',
+    emailsDoNotMatch: '⚠️ Le e-mail non coincidono',
+    emailsMatch: '✅ Le e-mail coincidono',
+    sizeSmall: 'Piccolo',
+    sizeMedium: 'Medio',
+    sizeLarge: 'Grande',
   },
 };
 
@@ -959,18 +1079,18 @@ export function Reservation({ language, availability }: ReservationProps) {
           <div className="mb-6 bg-blue-600 text-white rounded-xl px-6 py-4 flex flex-wrap items-center justify-between gap-3 shadow-lg">
             <div className="flex items-center gap-4 flex-wrap">
               <div className="flex items-center gap-2">
-                <span className="text-blue-200 text-sm">Locker:</span>
-                <span className="font-bold">{formData.lockerCount}× {formData.lockerSize === 'S' ? 'Small' : formData.lockerSize === 'M' ? 'Medium' : 'Large'}</span>
+                <span className="text-blue-200 text-sm">{t.lockerLabel}:</span>
+                <span className="font-bold">{formData.lockerCount}× {formData.lockerSize === 'S' ? t.sizeSmall : formData.lockerSize === 'M' ? t.sizeMedium : t.sizeLarge}</span>
               </div>
               {formData.dropOffDate && formData.pickUpDate && (
                 <div className="flex items-center gap-2">
-                  <span className="text-blue-200 text-sm">Duration:</span>
+                  <span className="text-blue-200 text-sm">{t.durationLabel}:</span>
                   <span className="font-bold">{calculateDuration().days}d {calculateDuration().hours}h</span>
                 </div>
               )}
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-blue-200 text-sm">Total:</span>
+              <span className="text-blue-200 text-sm">{t.totalLabel}:</span>
               <span className="font-bold text-xl">{calculatePrice()} {currency === 'CZK' ? 'Kč' : '€'}</span>
             </div>
           </div>
@@ -1039,7 +1159,7 @@ export function Reservation({ language, availability }: ReservationProps) {
                         </div>
                       ) : (
                         <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-3 py-1 rounded-full font-bold">
-                          ✓ Available
+                          {t.available}
                         </div>
                       )}
                       
@@ -1050,9 +1170,9 @@ export function Reservation({ language, availability }: ReservationProps) {
                         {t[`locker${size}Dim` as keyof typeof t]}
                       </div>
                       <div className="text-sm text-gray-700 mb-3 text-left leading-relaxed">
-                        {size === 'S' && <span>👜 Handbag · 📱 Phone · 🛂 Passport · 🕶️ Small items</span>}
-                        {size === 'M' && <span>🧳🧳 2 cabin bags<br/>🎒 + backpack</span>}
-                        {size === 'L' && <span>🧳🧳🧳 3 cabin bags<br/>🎒 + backpack</span>}
+                        {size === 'S' && <span style={{whiteSpace: 'pre-line'}}>{t.lockerSDesc}</span>}
+                        {size === 'M' && <span style={{whiteSpace: 'pre-line'}}>{t.lockerMDesc}</span>}
+                        {size === 'L' && <span style={{whiteSpace: 'pre-line'}}>{t.lockerLDesc}</span>}
                       </div>
                       
                       {!isUnavailable && (
@@ -1096,7 +1216,7 @@ export function Reservation({ language, availability }: ReservationProps) {
                   </button>
                   {formData.lockerCount > 1 && (
                     <div className="ml-4 bg-orange-100 rounded-lg px-4 py-2 text-sm font-semibold text-orange-700">
-                      × {formData.lockerCount} lockers
+                      × {formData.lockerCount} {t.lockersCount}
                     </div>
                   )}
                 </div>
@@ -1335,7 +1455,7 @@ export function Reservation({ language, availability }: ReservationProps) {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     <Mail className="w-4 h-4 inline mr-2" />
-                    Confirm Email <span className="text-red-500">*</span>
+                    {t.confirmEmailLabel} <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="email"
@@ -1348,14 +1468,14 @@ export function Reservation({ language, availability }: ReservationProps) {
                           : 'border-red-400 bg-red-50'
                         : 'border-gray-300'
                     }`}
-                    placeholder="Retype your email"
+                    placeholder={t.confirmEmailPlaceholder}
                     required
                   />
                   {customerData.confirmEmail && customerData.email !== customerData.confirmEmail && (
-                    <p className="mt-1 text-sm text-red-600 font-medium">⚠️ Emails do not match</p>
+                    <p className="mt-1 text-sm text-red-600 font-medium">{t.emailsDoNotMatch}</p>
                   )}
                   {customerData.confirmEmail && customerData.email === customerData.confirmEmail && (
-                    <p className="mt-1 text-sm text-green-600 font-medium">✅ Emails match</p>
+                    <p className="mt-1 text-sm text-green-600 font-medium">{t.emailsMatch}</p>
                   )}
                 </div>
 
